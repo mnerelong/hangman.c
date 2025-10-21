@@ -9,27 +9,34 @@
 int main(void)
 {
     // Meika's work
-    char test_list[] = {"Idunno", "FivePebbles", "Loremipsum", "Help"};
+    char word[10];
     srand(time(NULL));
-    int random = rand() %4 +0;
+    int random = rand() %10 +1;
+    if (random == 1){
+        char* word = "build";
+    } else if (random == 2) {
+        char* word = "lovely";
+    } else if (random == 3) {
+        char* word = "game";
+    } else if (random == 4) {
+        char* word = "first";
+    } else {
+        char* word = "five";
+    }
 
+    printf("%s\n", word);
 
-        char user_vari;
+    char user_vari;
     char chosen_word =
         // Elias worked on
         if (user_vari)
+
+        else (hp - 1)
+        print
     {
         printf("You can vote!\n")
     }
-    else if (age == 16)
-    {
-        printf("You can get a lisence!!\n");
-    }
-    else if (age == 15)
-    {
-        printf("You can get a permit!\n");
-    }
-    else if (age >= 6)
+    if (hp < 0)
     {
         printf(" you can go to school! :(\n");
     }
@@ -39,18 +46,18 @@ int main(void)
     }
 
     // Charlie worked on
-     if (age < 0) {
-        printf("Please enter a real age.\n");
-    } else if (age >= 18) {
-        printf("You can vote!\n");
-    } else if (age >= 16) {
-        printf("You can drive!\n");
-    } else if (age >= 15) {
-        printf("You can get ur permit!\n");
-    } else if (age >= 6) {
-        printf("You can go to school!\n");
+     if ( < ) {
+        printf("\n");
+    } else if ( >= ) {
+        printf("\n");
+    } else if ( >= ) {
+        printf("\n");
+    } else if ( >= ) {
+        printf("\n");
+    } else if ( >= ) {
+        printf("\n");
     } else {
-        printf("You cant do any of these.\n");
+        printf("\n");
     }
 
     return 0;
