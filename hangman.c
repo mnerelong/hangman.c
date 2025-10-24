@@ -6,59 +6,64 @@
 #include <time.h>
 #include <stdlib.h>
 
-int main(void){
-
+int main(void)
+{
+    int correct;
     int hp = 6;
-    char word[10];
+    char word[] = "builds";  
+    int length = strlen(word); // Charlie came up with the length variable!
     srand(time(NULL));
-    int attempt_uno;
-    int attempt_dos;
-    int attempt_tres;
-    int attempt_quatro;
-    int attempt_sinco;
+    char guess;
+    int successone;
+    int successtwo;
+    int successthree;
+    int successfour;
+    int successfive;
+    // Elias worked on
 
-    // Meika did the "element of randomness".
-    int random = rand() %10 +1;
-    if (random == 1){
-        char* word = "build"; 
-    } else if (random == 2) {
-        char* word = "lovely";
-    } else if (random == 3) {
-        char* word = "game";
-    } else if (random == 4) {
-        char* word = "first";
-    } else {
-        char* word = "five";
-    }
-    
-        // Elias worked on
-        
-    
-        if (hp <= 0)
+    /*if (hp <= 0)
     {
         printf(":( GAME OVER, YOU FAILED, LOSE, GIT GUD, RIP, L, BOO HOO ):\n");
     }
     else if (hp > 0)
-        printf("YOU WIN!!!!!!!");
-    
+        printf("YOU WIN!!!!!!!");}*/
 
 
-// Charlie worked on
-    char letters[] =  {};   	int guessed =0;
-	char word[] = "build";
-	int length = strlen(word);
-	char guess;
-	int correct = 0;
+        if (word == "builds"){
+        printf("The word has Six letters");
+        printf("Pick a Letter.");
+        scanf("%c", &attempt_uno);
+            if (attempt_uno = "b" || "u" || "i" || "l" || "d" || "s")
+            successone = attempt_uno
+    }
+        if 
 
-	printf("please pick a letter: ");
-	scanf("%c", &guess);
-	for(int i = 0; i < length; i++){ 
-		if (word [i] == guess){
-        correct = 1;    
-        } else { 
-		correct = 0;
-    printf("u got it wrong pls try again: ")
-		break;
-        }
-    return 0; 
+
+    // Charlie worked on
+    while (int i = 0; i < length; i++) {
+    if (word[i] == guess) {
+        display[i] = guess; 
+        correct = 1; 
+    }
+    i++;
+}
+
+if (!correct) { 
+    wrong[wrongCount] = guess; 
+    wrongCount++;
+    attemptsLeft--;
+    printf("That's wrong!\n");  
+} else {
+    printf("AYYY u got it\n"); 
+    //success_one = 
+}
+
+if (strcmp(display, word) == 0) {
+    printf("\nU win!!! The answer was: %s\n", word);
+    return 0;
+}
+
+    printf("U lose!!! The word was: %s\n", word);       
+return 0;
+
 }
